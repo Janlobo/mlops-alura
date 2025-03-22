@@ -9,7 +9,7 @@ import os
 load_dotenv()
 colunas = ["tamanho", "ano", "garagem"]
 # Carregando o modelo
-modelo = pkl.load(open("../mlops-deploy-git/models/modelo.pkl", "rb"))
+modelo = pkl.load(open("../../models/modelo.pkl", "rb"))
 
 app = Flask(__name__)
 app.config["BASIC_AUTH_USERNAME"] = os.getenv("BASIC_AUTH_USERNAME")
